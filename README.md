@@ -1,16 +1,123 @@
-# React + Vite
+# Student Record Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Student Record Management System built using **React.js**, **Tailwind CSS**, **Node.js**, **Express.js**, **MongoDB**, and **Axios**.
 
-Currently, two official plugins are available:
+This project allows users to manage student records with full CRUD functionality in a clean and responsive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ➕ Add Student Records
+* 📋 View All Students
+* ✏️ Edit Existing Student Data
+* 🗑️ Delete Student Records
+* 🔍 Search by Name or Student ID
+* 📱 Responsive UI
+* 🌐 Frontend + Backend Integrated
+* 💾 MongoDB Database Support
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* React Icons
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* dotenv
+* cors
+
+---
+
+## 📂 Project Structure
+
+```bash
+student-record-management/
+│── src/
+│── backend/
+│── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
+cd backend
+npm install
+```
+
+Create `.env` file inside backend folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+Run backend:
+
+```bash
+npm start
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🌍 Deployment
+
+### Frontend
+
+Deployed using Vercel
+
+### Backend
+
+Deployed using Render
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots here after deployment)
+
+---
+
+## 👨‍💻 Author
+
+Made with dedication by Prakriti Wadhwani
+
+---
+
+## 📄 License
+
+This project is open source and free to use.
