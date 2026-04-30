@@ -105,10 +105,9 @@ Deployed using Vercel
 Deployed using Render
 
 ---
-
-## 📸 Screenshots
-
-(Add screenshots here after deployment)
+##Deploment Link
+Frontend   https://student-management-system-five-flax.vercel.app/
+Backend    https://student-backend-v41a.onrender.com/students
 
 ---
 
