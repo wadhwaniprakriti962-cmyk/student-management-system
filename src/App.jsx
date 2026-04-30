@@ -46,7 +46,7 @@ function App() {
 
 const fetchStudents = async () => {
   try {
-    const res = await axios.get("http://localhost:5000/students");
+    const res = await axios.get("https://student-backend-v41a.onrender.com/students");
     setStudents(res.data);
   } catch (err) {
     console.log(err);
@@ -55,7 +55,6 @@ const fetchStudents = async () => {
 
 
 async function addStudent() {
-  console.log("Buttob is clicked")
   if (!student_name || !student_id || !phone) {
     alert("Please fill all fields");
     return;
@@ -71,7 +70,7 @@ async function addStudent() {
     if (isEditing) {
       // UPDATE EXISTING STUDENT
       await axios.put(
-        `http://localhost:5000/students/${editId}`,
+        `https://student-backend-v41a.onrender.com/students/${editId}`,
         payload
       );
 
@@ -79,7 +78,7 @@ async function addStudent() {
       setEditId(null);
     } else {
       // CREATE NEW STUDENT
-      await axios.post("http://localhost:5000/students", payload);
+      await axios.post("https://student-backend-v41a.onrender.com/students", payload);
     }
 
     fetchStudents();
@@ -94,7 +93,7 @@ async function addStudent() {
 
   async function deleteStudent(id) {
   try {
-    await axios.delete(`http://localhost:5000/students/${id}`);
+    await axios.delete(`https://student-backend-v41a.onrender.com/students/${id}`);
     fetchStudents();
   } catch (err) {
     console.log(err);
